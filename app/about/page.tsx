@@ -20,8 +20,7 @@ export default function AboutPage() {
               About ADMI AI Academy
             </h1>
             <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto">
-              We're on a mission to make AI skills accessible to Africa's creative and business professionals, 
-              empowering them to thrive in the AI-powered future.
+              We're building a movement that equips Africans to not just use AI — but to shape its future. Through immersive learning, inspiring events, and powerful collaborations, we connect visionaries, educators, creators, and leaders who believe technology should work for people and communities.
             </p>
           </div>
         </section>
@@ -34,17 +33,13 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    ADMI AI Academy was born from a simple observation: AI is transforming every industry, 
-                    yet access to quality AI training in Africa remains limited.
+                    We're building a movement that equips Africans to not just use AI — but to shape its future. Through immersive learning, inspiring events, and powerful collaborations, we connect visionaries, educators, creators, and leaders who believe technology should work for people and communities.
                   </p>
                   <p>
-                    As part of the Africa Digital Media Institute (ADMI) family, we've spent over a decade 
-                    training Africa's top creative talent. Now, we're bringing that same commitment to 
-                    excellence to AI education.
+                    As part of the Africa Digital Media Institute (ADMI) family, we've spent over a decade training Africa's top creative talent. Now, we're bringing that same commitment to excellence to AI education, making cutting-edge skills accessible to professionals across the continent.
                   </p>
                   <p>
-                    Our programmes are designed by industry practitioners who understand both the technology 
-                    and the unique challenges and opportunities of the African market.
+                    Our programmes are designed by industry practitioners who understand both the technology and the unique challenges and opportunities of the African market. We focus on practical, industry-ready skills that you can apply immediately.
                   </p>
                 </div>
               </div>
@@ -63,8 +58,7 @@ export default function AboutPage() {
                 <div className="text-4xl mb-4">🎯</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-600">
-                  To equip Africa's professionals with practical AI skills that drive career growth 
-                  and business innovation.
+                  Our mission is simple: unlock Africa's potential through intelligent innovation that drives growth, creativity, and shared progress.
                 </p>
               </div>
 

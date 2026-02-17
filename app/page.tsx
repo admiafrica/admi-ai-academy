@@ -30,8 +30,8 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            {/* Left-side Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 via-25% to-transparent to-50%"></div>
+            {/* Gradient Overlay - Full coverage on mobile, left-side on desktop */}
+            <div className="absolute inset-0 bg-black/85 lg:bg-transparent lg:bg-gradient-to-r lg:from-black/95 lg:via-black/50 lg:via-55% lg:to-transparent lg:to-65%"></div>
           </div>
 
           <div className="section-container relative z-10">
@@ -41,14 +41,17 @@ export default function Home() {
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                Build with AI.
+                Learn the Skills That
                 <br />
-                Create the Future.
+                Power the Future
               </h1>
               
-              <p className="text-lg md:text-xl text-white/95 mb-8">
-                Master AI tools and technologies at Africa's leading creative media institute. 
-                Transform your career with practical, industry-focused AI training.
+              <p className="text-lg md:text-xl text-white/95 mb-4">
+                Creativity meets innovation and ideas turn into impact.
+              </p>
+              
+              <p className="text-lg md:text-xl text-white/90 mb-8">
+                Master practical, industry-ready AI skills through interactive courses led by experts shaping Africa's digital revolution. Whether you're a beginner or a professional, gain the tools to stay ahead and make AI work for you.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -123,6 +126,31 @@ export default function Home() {
                 <div key={tool.name} className="card-light p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="text-4xl mb-3">{tool.icon}</div>
                   <div className="text-sm font-semibold text-gray-700">{tool.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Mission & Partners Section */}
+        <section className="w-full bg-white section-padding">
+          <div className="section-container">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                We're building a movement that equips Africans to not just use AI — but to shape its future. Through immersive learning, inspiring events, and powerful collaborations, we connect visionaries, educators, creators, and leaders who believe technology should work for people and communities. Our mission is simple: unlock Africa's potential through intelligent innovation that drives growth, creativity, and shared progress.
+              </p>
+            </div>
+
+            {/* Partner Logos */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center max-w-4xl mx-auto">
+              {[
+                'Multimedia University',
+                'ICT Authority',
+                'Industry Partner 3',
+                'Industry Partner 4'
+              ].map((partner) => (
+                <div key={partner} className="card-light p-6 text-center">
+                  <div className="font-semibold text-gray-700 text-sm">{partner}</div>
                 </div>
               ))}
             </div>
@@ -428,6 +456,9 @@ export default function Home() {
               <h2 className="section-heading mb-4">
                 Why Choose <span className="text-ai-primary">ADMI AI Academy</span>
               </h2>
+              <p className="section-subheading">
+                We're building a movement that equips Africans to not just use AI — but to shape its future. Through immersive learning, inspiring events, and powerful collaborations, we unlock Africa's potential through intelligent innovation.
+              </p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
