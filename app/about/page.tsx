@@ -90,7 +90,7 @@ export default function AboutPage() {
         </section>
 
         {/* What Makes Us Different */}
-        <section className="section-padding bg-ai-light-bg">
+        <section className="section-padding bg-white">
           <div className="section-container">
             <h2 className="section-heading mb-12 text-center">
               What Makes Us Different
@@ -182,7 +182,7 @@ export default function AboutPage() {
         </section>
 
         {/* ADMI Connection */}
-        <section className="section-padding bg-ai-light-bg">
+        <section className="section-padding bg-white">
           <div className="section-container">
             <div className="text-center mb-12">
               <h2 className="section-heading mb-4">

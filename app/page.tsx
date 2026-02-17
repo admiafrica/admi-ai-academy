@@ -126,7 +126,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="w-full bg-ai-light-bg section-padding">
+        <section className="w-full bg-white section-padding">
           <div className="section-container">
             <div className="mb-12 max-w-3xl mx-auto text-center">
               <h2 className="section-heading mb-4">

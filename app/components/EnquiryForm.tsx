@@ -108,7 +108,7 @@ export default function EnquiryForm() {
       <div className="grid md:grid-cols-2 gap-6">
         {/* First Name */}
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-white mb-2">
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
             First Name *
           </label>
           <input
@@ -118,14 +118,14 @@ export default function EnquiryForm() {
             value={formData.firstName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
             placeholder="e.g., John"
           />
         </div>
 
         {/* Last Name */}
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-white mb-2">
+          <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
             Last Name *
           </label>
           <input
@@ -135,7 +135,7 @@ export default function EnquiryForm() {
             value={formData.lastName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
             placeholder="e.g., Doe"
           />
         </div>
@@ -143,7 +143,7 @@ export default function EnquiryForm() {
 
       {/* Email */}
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
           Email Address *
         </label>
         <input
@@ -153,14 +153,14 @@ export default function EnquiryForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
           placeholder="e.g., john.doe@example.com"
         />
       </div>
 
       {/* Phone */}
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
           Phone Number *
         </label>
         <input
@@ -170,14 +170,14 @@ export default function EnquiryForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
           placeholder="e.g., +254 712 345 678"
         />
       </div>
 
       {/* Programme */}
-      <div>{errorMessage || "Something went wrong. Please try again or contact us directly."}
-        <label htmlFor="programme" className="block text-sm font-medium text-white mb-2">
+      <div>
+        <label htmlFor="programme" className="block text-sm font-medium text-gray-700 mb-2">
           Programme of Interest *
         </label>
         <select
@@ -186,19 +186,19 @@ export default function EnquiryForm() {
           value={formData.programme}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
         >
-          <option value="" className="bg-[#1a1a2e]">Select a programme...</option>
-          <option value="ai-for-creatives" className="bg-[#1a1a2e]">AI for Creative Professionals</option>
-          <option value="ai-for-marketing" className="bg-[#1a1a2e]">AI for Marketing Excellence</option>
-          <option value="ai-for-business-intelligence" className="bg-[#1a1a2e]">AI for Business Intelligence</option>
-          <option value="not-sure" className="bg-[#1a1a2e]">Not sure yet</option>
+          <option value="" className="bg-white">Select a programme...</option>
+          <option value="ai-for-creatives" className="bg-white">AI for Creative Professionals</option>
+          <option value="ai-for-marketing" className="bg-white">AI for Marketing Excellence</option>
+          <option value="ai-for-business-intelligence" className="bg-white">AI for Business Intelligence</option>
+          <option value="not-sure" className="bg-white">Not sure yet</option>
         </select>
       </div>
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
           Message (Optional)
         </label>
         <textarea
@@ -207,7 +207,7 @@ export default function EnquiryForm() {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors resize-none"
+          className="w-full px-4 py-3 rounded-lg bg-white border-2 border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors resize-none"
           placeholder="Tell us about your goals and any questions you have..."
         />
       </div>
@@ -216,7 +216,7 @@ export default function EnquiryForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-[#C55A11] to-[#D9DC5B] text-white font-semibold hover:shadow-lg hover:shadow-[#C55A11]/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-8 py-4 rounded-lg bg-[#C55A11] text-white font-semibold hover:bg-[#a04a0e] hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? "Submitting..." : "Submit Enquiry"}
       </button>
@@ -234,7 +234,7 @@ export default function EnquiryForm() {
         </div>
       )}
 
-      <p className="text-sm text-white/50 text-center">
+      <p className="text-sm text-gray-500 text-center">
         By submitting this form, you agree to our privacy policy. We'll never share your information.
       </p>
     </form>

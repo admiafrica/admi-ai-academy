@@ -146,7 +146,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
         </section>
 
         {/* Learning Outcomes */}
-        <section className="section-padding bg-ai-light-bg">
+        <section className="section-padding bg-white">
           <div className="section-container">
             <h2 className="section-heading mb-8">What You'll Learn</h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -184,7 +184,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
         </section>
 
         {/* Projects */}
-        <section className="section-padding bg-ai-light-bg">
+        <section className="section-padding bg-white">
           <div className="section-container">
             <h2 className="section-heading mb-8">Portfolio Projects</h2>
             <div className="grid md:grid-cols-2 gap-6">

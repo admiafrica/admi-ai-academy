@@ -128,7 +128,7 @@ export default function PathsPage() {
                     </div>
 
                     {/* Right Column - Price & CTA */}
-                    <div className="md:w-1/3 bg-ai-light-bg p-8 border-l border-gray-200">
+                    <div className="md:w-1/3 bg-white p-8 border-l border-gray-200">
                       <div className="text-center mb-6">
                         <div className="text-sm text-gray-500 mb-2">Programme Fee</div>
                         <div className="text-4xl font-bold text-gray-900 mb-1">{path.price}</div>
