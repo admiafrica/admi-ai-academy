@@ -37,7 +37,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
   const courseSchema = generateCourseSchema(path);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://ai.admi.africa" },
-    { name: "Learning Paths", url: "https://ai.admi.africa/paths" },
+    { name: "Career Paths", url: "https://ai.admi.africa/paths" },
     { name: path.title, url: `https://ai.admi.africa/paths/${path.slug}` }
   ]);
 
@@ -65,7 +65,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to All Paths
+              Back to All Career Paths
             </Link>
 
             <div className="flex items-start justify-between mb-6">
@@ -97,9 +97,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
 
             <div className="flex gap-4">
               <Link 
-                href="https://lms.admi.africa/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/courses"
                 className="px-8 py-4 rounded-lg bg-white text-ai-primary font-semibold hover:bg-white/95 shadow-md transition-all"
               >
                 Browse Courses →
@@ -234,9 +232,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
             </p>
             <div className="flex gap-4 justify-center">
               <Link 
-                href="https://lms.admi.africa/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/courses"
                 className="btn btn-white"
               >
                 Browse Courses →

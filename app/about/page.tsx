@@ -17,10 +17,10 @@ export default function AboutPage() {
         <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#2D5F5D] to-[#1a4442] section-padding">
           <div className="section-container text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              About ADMI AI Academy
+              Shaping Africa's AI Future
             </h1>
-            <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto">
-              We're building a movement that equips Africans to not just use AI — but to shape its future. Through immersive learning, inspiring events, and powerful collaborations, we connect visionaries, educators, creators, and leaders who believe technology should work for people and communities.
+            <p className="text-lg md:text-xl text-white/95 max-w-2xl mx-auto">
+              Empowering professionals to not just use AI — but to shape its future.
             </p>
           </div>
         </section>

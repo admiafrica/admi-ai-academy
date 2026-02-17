@@ -34,7 +34,13 @@ export default function Header() {
               href="/paths" 
               className="text-gray-700 hover:text-[#C55A11] font-medium transition-colors duration-200"
             >
-              Learning Paths
+              Career Paths
+            </Link>
+            <Link 
+              href="/courses" 
+              className="text-gray-700 hover:text-[#C55A11] font-medium transition-colors duration-200"
+            >
+              Courses
             </Link>
             <Link 
               href="/about" 
@@ -82,7 +88,14 @@ export default function Header() {
               className="block py-2 text-gray-700 hover:text-[#C55A11] font-medium transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Learning Paths
+              Career Paths
+            </Link>
+            <Link 
+              href="/courses" 
+              className="block py-2 text-gray-700 hover:text-[#C55A11] font-medium transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Courses
             </Link>
             <Link 
               href="/about" 

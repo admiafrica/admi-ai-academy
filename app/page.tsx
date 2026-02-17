@@ -46,19 +46,13 @@ export default function Home() {
                 Power the Future
               </h1>
               
-              <p className="text-lg md:text-xl text-white/95 mb-4">
-                Creativity meets innovation and ideas turn into impact.
-              </p>
-              
               <p className="text-lg md:text-xl text-white/90 mb-8">
                 Master practical, industry-ready AI skills through interactive courses led by experts shaping Africa's digital revolution. Whether you're a beginner or a professional, gain the tools to stay ahead and make AI work for you.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
-                  href="https://lms.admi.africa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/courses"
                   className="btn btn-primary"
                 >
                   View All Courses
@@ -164,10 +158,10 @@ export default function Home() {
           <div className="section-container">
             <div className="mb-12 max-w-3xl mx-auto text-center">
               <h2 className="section-heading mb-4">
-                Choose Your <span className="text-ai-primary">Learning Path</span>
+                Choose Your <span className="text-ai-primary">Career Path</span>
               </h2>
               <p className="section-subheading">
-                Specialized programmes designed for your role and career goals. <Link href="https://lms.admi.africa/" target="_blank" rel="noopener noreferrer" className="text-ai-primary hover:underline font-semibold">Browse all courses →</Link>
+                Structured programs that prepare you for specific AI career roles. <Link href="/courses" className="text-ai-primary hover:underline font-semibold">Or browse individual courses →</Link>
               </p>
             </div>
 
@@ -223,9 +217,9 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#C55A11] text-white flex items-center justify-center text-2xl font-bold">
                   1
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Choose Your Path</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Choose Path or Course</h3>
                 <p className="text-sm text-gray-600">
-                  Select the programme that matches your career goals and schedule
+                  Select a career path program or individual courses that match your goals
                 </p>
               </div>
 
@@ -740,9 +734,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 
-                  href="https://lms.admi.africa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/courses"
                   className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-ai-red font-bold text-base hover:bg-white/95 transition-all duration-200 shadow-lg"
                 >
                   Browse Courses →

@@ -7,27 +7,27 @@ import { learningPaths } from "../data/learning-paths";
 import { generateFAQSchema } from "../utils/structured-data";
 
 export const metadata = {
-  title: "Learning Paths | ADMI AI Academy",
-  description: "Explore our AI training programmes designed for creative professionals, marketers, and business analysts.",
+  title: "Career Paths | ADMI AI Academy",
+  description: "Explore career path programs designed to launch you into AI roles like Creative Specialist, Marketing Analyst, or Business Analyst.",
 };
 
 export default function PathsPage() {
   const faqs = [
     {
-      question: "Do I need prior AI experience?",
-      answer: "No prior AI experience is required. Our learning paths are designed for beginners to intermediate learners. We'll start with the fundamentals and build up your skills progressively."
+      question: "How long does it take to become career-ready?",
+      answer: "Our career paths range from 10-12 weeks of intensive training. Most graduates start applying for roles immediately after completion, with many securing positions within 3 months. You'll graduate with a portfolio of real projects and industry-recognized certification."
     },
     {
-      question: "What is the class schedule like?",
-      answer: "Classes are held twice a week in the evenings (6-9 PM) to accommodate working professionals. We also offer weekend options for some programmes. All sessions are recorded for review."
+      question: "Do I need prior AI experience to start?",
+      answer: "No prior AI experience required. Our career paths are designed to take you from beginner to job-ready. We start with fundamentals and build practical skills progressively, ensuring you're confident applying for entry to mid-level AI roles."
+    },
+    {
+      question: "What kind of jobs can I get after completing a career path?",
+      answer: "Graduates work as AI Creative Specialists, Marketing Analysts, Business Analysts, Content Creators, Data Analysts, and more. We provide career support including resume reviews, portfolio development, and connections to hiring partners across Africa's growing AI job market."
     },
     {
       question: "Are payment plans available?",
-      answer: "Yes! We offer flexible payment plans to make training accessible. You can pay in installments over 3-6 months. Contact our admissions team to discuss options that work for you."
-    },
-    {
-      question: "Will I get a certificate?",
-      answer: "Yes! Upon successful completion, you'll receive an official certificate from ADMI AI Academy, recognized across Africa's creative and tech industries."
+      answer: "Yes! We offer flexible payment plans over 3-6 months to make career transformation accessible. Contact our admissions team to discuss options that work for your budget."
     }
   ];
 
@@ -46,11 +46,10 @@ export default function PathsPage() {
         <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#C55A11] to-[#8B1A1F] section-padding">
           <div className="section-container text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Choose Your Learning Path
+              Choose Your Career Path
             </h1>
-            <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto">
-              Specialized AI training programmes designed for your role and career goals. 
-              All paths include hands-on projects, expert instruction, and career support.
+            <p className="text-lg md:text-xl text-white/95 max-w-2xl mx-auto">
+              Structured programs that prepare you for specific AI career roles.
             </p>
           </div>
         </section>
@@ -65,49 +64,51 @@ export default function PathsPage() {
                   className="card-light-hover overflow-hidden"
                 >
                   <div className="md:flex">
-                    {/* Left Column - Main Info */}
+                    {/* Left Column - Career Info */}
                     <div className="md:w-2/3 p-8">
                       <div className="flex items-start justify-between mb-4">
                         <div>
+                          <div className="text-sm font-semibold text-ai-teal mb-2">CAREER PATH</div>
                           <h2 className="text-3xl font-bold text-gray-900 mb-2">{path.title}</h2>
-                          <p className="text-lg text-ai-primary font-semibold">{path.tagline}</p>
-                        </div>
-                        <div className="badge-teal whitespace-nowrap">
-                          {path.duration}
+                          <p className="text-lg text-gray-600">{path.tagline}</p>
                         </div>
                       </div>
 
                       <p className="text-gray-600 mb-6">{path.description}</p>
 
-                      {/* Key Details */}
-                      <div className="grid grid-cols-2 gap-4 mb-6">
-                        <div>
-                          <div className="text-sm text-gray-500 mb-1">Level</div>
-                          <div className="text-gray-900 font-semibold">{path.level}</div>
-                        </div>
-                        <div>
-                          <div className="text-sm text-gray-500 mb-1">Next Intake</div>
-                          <div className="text-gray-900 font-semibold">{path.nextIntake}</div>
+                      {/* Career Roles */}
+                      <div className="mb-6">
+                        <div className="text-sm font-semibold text-gray-900 mb-3">Job Titles You Can Pursue:</div>
+                        <div className="flex flex-wrap gap-2">
+                          {path.targetAudience.slice(0, 4).map((role, idx) => (
+                            <span 
+                              key={idx}
+                              className="px-4 py-2 rounded-lg bg-ai-primary/10 border border-ai-primary/20 text-gray-900 font-medium text-sm"
+                            >
+                              {role}
+                            </span>
+                          ))}
+                          {path.targetAudience.length > 4 && (
+                            <span className="px-4 py-2 rounded-lg bg-gray-100 text-gray-700 text-sm">
+                              +{path.targetAudience.length - 4} more
+                            </span>
+                          )}
                         </div>
                       </div>
 
-                      {/* Tools Preview */}
+                      {/* Key Skills */}
                       <div className="mb-6">
-                        <div className="text-sm text-gray-500 mb-2">Tools You'll Master:</div>
-                        <div className="flex flex-wrap gap-2">
-                          {path.tools.slice(0, 4).map((tool, idx) => (
-                            <span 
+                        <div className="text-sm font-semibold text-gray-900 mb-3">Key Career Skills:</div>
+                        <div className="grid grid-cols-2 gap-2">
+                          {path.outcomes.slice(0, 4).map((skill, idx) => (
+                            <div 
                               key={idx}
-                              className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm"
+                              className="flex items-start gap-2 text-sm text-gray-700"
                             >
-                              {tool.name}
-                            </span>
+                              <span className="text-ai-primary mt-0.5 flex-shrink-0">✓</span>
+                              <span>{skill}</span>
+                            </div>
                           ))}
-                          {path.tools.length > 4 && (
-                            <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-sm">
-                              +{path.tools.length - 4} more
-                            </span>
-                          )}
                         </div>
                       </div>
 
@@ -116,48 +117,44 @@ export default function PathsPage() {
                           href={`/paths/${path.slug}`}
                           className="btn btn-primary btn-small"
                         >
-                          View Full Details
+                          Explore Career Path
                         </Link>
                         <Link 
-                          href="https://lms.admi.africa/"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href="/enquiry"
                           className="btn btn-secondary btn-small"
                         >
-                          View Courses →
+                          Get Career Advice
                         </Link>
                       </div>
                     </div>
 
-                    {/* Right Column - Price & CTA */}
-                    <div className="md:w-1/3 bg-white p-8 border-l border-gray-200">
-                      <div className="text-center mb-6">
-                        <div className="text-sm text-gray-500 mb-2">Programme Fee</div>
-                        <div className="text-4xl font-bold text-gray-900 mb-1">{path.price}</div>
-                        <div className="text-sm text-gray-600">Flexible payment plans available</div>
+                    {/* Right Column - Career Outcomes */}
+                    <div className="md:w-1/3 bg-gradient-to-br from-ai-teal/5 to-ai-primary/5 p-8 border-l border-gray-200">
+                      <div className="mb-6">
+                        <div className="text-sm font-semibold text-gray-900 mb-4">Career Outlook</div>
+                        
+                        <div className="space-y-4">
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <div className="text-2xl font-bold text-ai-primary mb-1">{path.duration}</div>
+                            <div className="text-xs text-gray-600">Time to Career-Ready</div>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <div className="text-2xl font-bold text-ai-teal mb-1">85%+</div>
+                            <div className="text-xs text-gray-600">Career Advancement Rate</div>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <div className="text-2xl font-bold text-gray-900 mb-1">High</div>
+                            <div className="text-xs text-gray-600">Market Demand</div>
+                          </div>
+                        </div>
                       </div>
 
-                      <div className="space-y-4 text-sm text-gray-600">
-                        <div className="flex items-start gap-2">
-                          <span className="text-ai-primary mt-0.5">✓</span>
-                          <span>Expert-led instruction</span>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <span className="text-ai-primary mt-0.5">✓</span>
-                          <span>Hands-on projects</span>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <span className="text-[#C55A11] mt-0.5">✓</span>
-                          <span>Career support</span>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <span className="text-[#C55A11] mt-0.5">✓</span>
-                          <span>ADMI certificate</span>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <span className="text-[#C55A11] mt-0.5">✓</span>
-                          <span>Lifetime alumni network</span>
-                        </div>
+                      <div className="pt-4 border-t border-gray-300">
+                        <div className="text-xs text-gray-600 mb-2">Programme Investment</div>
+                        <div className="text-2xl font-bold text-gray-900 mb-1">{path.price}</div>
+                        <div className="text-xs text-gray-600">Flexible payment plans</div>
                       </div>
                     </div>
                   </div>
@@ -173,23 +170,31 @@ export default function PathsPage() {
               <div className="space-y-4">
                 <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
                   <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
-                    <span>Do I need prior AI experience?</span>
+                    <span>How long does it take to become career-ready?</span>
                     <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
-                    No prior AI experience is required. Our learning paths are designed for beginners to intermediate learners. 
-                    We'll start with the fundamentals and build up your skills progressively.
+                    Our career paths range from 10-12 weeks of intensive training. Most graduates start applying for roles immediately after completion, with many securing positions within 3 months. You'll graduate with a portfolio of real projects and industry-recognized certification.
                   </p>
                 </details>
 
                 <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
                   <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
-                    <span>What is the class schedule like?</span>
+                    <span>Do I need prior AI experience to start?</span>
                     <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
-                    Classes are held twice a week in the evenings (6-9 PM) to accommodate working professionals. 
-                    We also offer weekend options for some programmes. All sessions are recorded for review.
+                    No prior AI experience required. Our career paths are designed to take you from beginner to job-ready. We start with fundamentals and build practical skills progressively, ensuring you're confident applying for entry to mid-level AI roles.
+                  </p>
+                </details>
+
+                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
+                    <span>What kind of jobs can I get after completing a career path?</span>
+                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
+                  </summary>
+                  <p className="text-gray-600 mt-4">
+                    Graduates work as AI Creative Specialists, Marketing Analysts, Business Analysts, Content Creators, Data Analysts, and more. We provide career support including resume reviews, portfolio development, and connections to hiring partners across Africa's growing AI job market.
                   </p>
                 </details>
 
@@ -199,19 +204,7 @@ export default function PathsPage() {
                     <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
-                    Yes! We offer flexible payment plans to make training accessible. You can pay in installments over 3-6 months. 
-                    Contact our admissions team to discuss options that work for you.
-                  </p>
-                </details>
-
-                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
-                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
-                    <span>Will I get a certificate?</span>
-                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
-                  </summary>
-                  <p className="text-gray-600 mt-4">
-                    Yes! Upon successful completion, you'll receive an official certificate from ADMI AI Academy, 
-                    recognized across Africa's creative and tech industries.
+                    Yes! We offer flexible payment plans over 3-6 months to make career transformation accessible. Contact our admissions team to discuss options that work for your budget.
                   </p>
                 </details>
               </div>
