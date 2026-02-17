@@ -35,8 +35,13 @@ export const metadata: Metadata = {
     description: "Master AI tools and technologies at Africa's leading creative media institute.",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
   },
 };
 
