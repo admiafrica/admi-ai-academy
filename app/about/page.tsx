@@ -14,7 +14,7 @@ export default function AboutPage() {
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#8EBFB0] to-[#5a8276] section-padding">
+        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#2D5F5D] to-[#1a4442] section-padding">
           <div className="section-container text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               About ADMI AI Academy

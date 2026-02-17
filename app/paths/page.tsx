@@ -43,7 +43,7 @@ export default function PathsPage() {
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#EF7B2E] to-[#C1272D] section-padding">
+        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#C55A11] to-[#8B1A1F] section-padding">
           <div className="section-container text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Choose Your Learning Path
@@ -145,15 +145,15 @@ export default function PathsPage() {
                           <span>Hands-on projects</span>
                         </div>
                         <div className="flex items-start gap-2">
-                          <span className="text-[#EF7B2E] mt-0.5">✓</span>
+                          <span className="text-[#C55A11] mt-0.5">✓</span>
                           <span>Career support</span>
                         </div>
                         <div className="flex items-start gap-2">
-                          <span className="text-[#EF7B2E] mt-0.5">✓</span>
+                          <span className="text-[#C55A11] mt-0.5">✓</span>
                           <span>ADMI certificate</span>
                         </div>
                         <div className="flex items-start gap-2">
-                          <span className="text-[#EF7B2E] mt-0.5">✓</span>
+                          <span className="text-[#C55A11] mt-0.5">✓</span>
                           <span>Lifetime alumni network</span>
                         </div>
                       </div>
@@ -169,10 +169,10 @@ export default function PathsPage() {
                 Frequently Asked Questions
               </h2>
               <div className="space-y-4">
-                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#EF7B2E] transition-colors">
-                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#EF7B2E] transition-colors">
+                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
                     <span>Do I need prior AI experience?</span>
-                    <span className="transform group-open:rotate-180 transition-transform text-[#EF7B2E]">▼</span>
+                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
                     No prior AI experience is required. Our learning paths are designed for beginners to intermediate learners. 
@@ -180,10 +180,10 @@ export default function PathsPage() {
                   </p>
                 </details>
 
-                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#EF7B2E] transition-colors">
-                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#EF7B2E] transition-colors">
+                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
                     <span>What is the class schedule like?</span>
-                    <span className="transform group-open:rotate-180 transition-transform text-[#EF7B2E]">▼</span>
+                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
                     Classes are held twice a week in the evenings (6-9 PM) to accommodate working professionals. 
@@ -191,10 +191,10 @@ export default function PathsPage() {
                   </p>
                 </details>
 
-                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#EF7B2E] transition-colors">
-                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#EF7B2E] transition-colors">
+                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
                     <span>Are payment plans available?</span>
-                    <span className="transform group-open:rotate-180 transition-transform text-[#EF7B2E]">▼</span>
+                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
                     Yes! We offer flexible payment plans to make training accessible. You can pay in installments over 3-6 months. 
@@ -202,10 +202,10 @@ export default function PathsPage() {
                   </p>
                 </details>
 
-                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#EF7B2E] transition-colors">
-                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#EF7B2E] transition-colors">
+                <details className="bg-white rounded-lg border border-gray-200 p-6 group hover:border-[#C55A11] transition-colors">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex items-center justify-between hover:text-[#C55A11] transition-colors">
                     <span>Will I get a certificate?</span>
-                    <span className="transform group-open:rotate-180 transition-transform text-[#EF7B2E]">▼</span>
+                    <span className="transform group-open:rotate-180 transition-transform text-[#C55A11]">▼</span>
                   </summary>
                   <p className="text-gray-600 mt-4">
                     Yes! Upon successful completion, you'll receive an official certificate from ADMI AI Academy, 

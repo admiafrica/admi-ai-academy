@@ -199,7 +199,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full bg-gradient-to-br from-[#C1272D] to-[#a01f24] section-padding">
+        <section className="w-full bg-gradient-to-br from-[#8B1A1F] to-[#6d1419] section-padding">
           <div className="section-container">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

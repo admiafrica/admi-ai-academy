@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  /* AI Academy Brand Colors (Orange Primary, Teal Accent, Red Highlight) */
-  --ai-primary: #EF7B2E;
-  --ai-primary-hover: #d96b1f;
-  --ai-teal: #8EBFB0;
-  --ai-teal-dark: #6da393;
-  --ai-red: #C1272D;
-  --ai-red-hover: #a01f24;
+  /* AI Academy Brand Colors - Rich & Grounded (Not Pastel) */
+  --ai-primary: #C55A11;
+  --ai-primary-hover: #a04a0e;
+  --ai-primary-light: #D2691E;
+  --ai-teal: #2D5F5D;
+  --ai-teal-dark: #1a4442;
+  --ai-red: #8B1A1F;
+  --ai-red-hover: #6d1419;
   --ai-warm: #F7F5F2;
-  --ai-light-bg: #f9f9f9;
+  --ai-light-bg: #f5f5f5;
+  --ai-dark-bg: #1a1a1a;
   --ai-whatsapp: #25D366;
   
   /* Semantic mappings */
@@ -47,18 +49,20 @@
 }
 
 @theme inline {
-  /* Colors */
-  --color-ai-primary: #EF7B2E;
-  --color-ai-primary-hover: #d96b1f;
-  --color-ai-teal: #8EBFB0;
-  --color-ai-teal-dark: #6da393;
-  --color-ai-red: #C1272D;
-  --color-ai-red-hover: #a01f24;
+  /* Colors - Rich & Grounded */
+  --color-ai-primary: #C55A11;
+  --color-ai-primary-hover: #a04a0e;
+  --color-ai-primary-light: #D2691E;
+  --color-ai-teal: #2D5F5D;
+  --color-ai-teal-dark: #1a4442;
+  --color-ai-red: #8B1A1F;
+  --color-ai-red-hover: #6d1419;
   --color-ai-warm: #F7F5F2;
-  --color-ai-light-bg: #f9f9f9;
+  --color-ai-light-bg: #f5f5f5;
+  --color-ai-dark-bg: #1a1a1a;
   --color-ai-whatsapp: #25D366;
-  --color-muted: #6B7280;
-  --color-muted-light: #9CA3AF;
+  --color-muted: #4B5563;
+  --color-muted-light: #6B7280;
   
   /* Fonts */
   --font-sans: var(--font-geist-sans);
@@ -164,38 +168,38 @@ a {
 }
 
 .card-light-hover:hover {
-  box-shadow: 0 8px 24px rgba(239, 123, 46, 0.15);
+  box-shadow: 0 8px 24px rgba(197, 90, 17, 0.2);
   border-color: var(--ai-primary);
   transform: translateY(-2px);
 }
 
 /* AI Academy gradient utilities */
 .gradient-text-orange-teal {
-  background: linear-gradient(90deg, var(--ai-primary), var(--ai-teal));
+  background: linear-gradient(90deg, #D2691E, #2D5F5D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Hero gradient backgrounds - 60/30/10 color system */
+/* Hero gradient backgrounds - Rich, deep gradients */
 .hero-gradient-orange-teal {
-  background: linear-gradient(135deg, var(--ai-primary) 0%, var(--ai-teal) 100%);
+  background: linear-gradient(135deg, #C55A11 0%, #2D5F5D 100%);
 }
 
 .hero-gradient-orange-red {
-  background: linear-gradient(135deg, var(--ai-primary) 0%, var(--ai-red) 100%);
+  background: linear-gradient(135deg, #C55A11 0%, #8B1A1F 100%);
 }
 
 .hero-gradient-teal {
-  background: linear-gradient(135deg, var(--ai-teal) 0%, var(--ai-teal-dark) 100%);
+  background: linear-gradient(135deg, #2D5F5D 0%, #1a4442 100%);
 }
 
 .hero-gradient-red {
-  background: linear-gradient(135deg, var(--ai-red) 0%, var(--ai-red-hover) 100%);
+  background: linear-gradient(135deg, #8B1A1F 0%, #6d1419 100%);
 }
 
 .hero-gradient-orange {
-  background: linear-gradient(135deg, var(--ai-primary) 0%, var(--ai-primary-hover) 100%);
+  background: linear-gradient(135deg, #C55A11 0%, #a04a0e 100%);
 }
 
 /* Badge variants */
@@ -205,7 +209,7 @@ a {
   border-radius: 100px;
   font-size: 0.8125rem;
   font-weight: 600;
-  background-color: rgba(239, 123, 46, 0.1);
+  background-color: rgba(197, 90, 17, 0.15);
   color: var(--ai-primary);
 }
 
@@ -215,7 +219,7 @@ a {
   border-radius: 100px;
   font-size: 0.8125rem;
   font-weight: 600;
-  background-color: rgba(142, 191, 176, 0.1);
+  background-color: rgba(45, 95, 93, 0.15);
   color: var(--ai-teal);
 }
 
@@ -225,7 +229,7 @@ a {
   border-radius: 100px;
   font-size: 0.8125rem;
   font-weight: 600;
-  background-color: rgba(193, 39, 45, 0.1);
+  background-color: rgba(139, 26, 31, 0.15);
   color: var(--ai-red);
 }
 /* Button system - 60/30/10 color rule applied */
@@ -252,7 +256,7 @@ a {
 .btn-primary:hover {
   background-color: var(--ai-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(239, 123, 46, 0.25);
+  box-shadow: 0 8px 20px rgba(197, 90, 17, 0.35);
 }
 
 .btn-secondary {

@@ -13,7 +13,7 @@ export default function EnquiryPage() {
     <>
       <Header />
       <main className="min-h-screen bg-white">
-        <section className="section-padding bg-gradient-to-br from-[#C1272D] to-[#8B1A24]">
+        <section className="section-padding bg-gradient-to-br from-[#8B1A1F] to-[#6d1419]">
           <div className="max-w-6xl mx-auto px-6 md:px-8">
             <div className="grid md:grid-cols-2 gap-12">
               {/* Left Column - Info */}

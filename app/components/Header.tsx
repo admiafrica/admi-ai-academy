@@ -32,25 +32,25 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <Link 
               href="/paths" 
-              className="text-gray-700 hover:text-ai-primary transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-[#C55A11] font-medium transition-colors duration-200"
             >
               Learning Paths
             </Link>
             <Link 
               href="/about" 
-              className="text-gray-700 hover:text-ai-primary transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-[#C55A11] font-medium transition-colors duration-200"
             >
               About
             </Link>
             <Link 
               href="/enquiry" 
-              className="text-gray-700 hover:text-ai-primary transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-[#C55A11] font-medium transition-colors duration-200"
             >
               Contact
             </Link>
             <Link 
               href="/enquiry"
-              className="px-6 py-2 rounded-lg bg-[#EF7B2E] text-white font-semibold hover:bg-[#d96b1f] transition-all duration-200 shadow-md hover:shadow-lg"
+              className="px-6 py-2 rounded-lg bg-[#C55A11] text-white font-semibold hover:bg-[#a04a0e] transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Enrol Now
             </Link>
@@ -79,28 +79,28 @@ export default function Header() {
           <div className="md:hidden py-4 space-y-3 border-t border-gray-200 animate-fade-in">
             <Link 
               href="/paths" 
-              className="block py-2 text-gray-700 hover:text-[#EF7B2E] transition-colors font-medium"
+              className="block py-2 text-gray-700 hover:text-[#C55A11] font-medium transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Learning Paths
             </Link>
             <Link 
               href="/about" 
-              className="block py-2 text-gray-700 hover:text-[#EF7B2E] transition-colors font-medium"
+              className="block py-2 text-gray-700 hover:text-[#C55A11] font-medium transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link 
               href="/enquiry" 
-              className="block py-2 text-gray-700 hover:text-[#EF7B2E] transition-colors font-medium"
+              className="block py-2 text-gray-700 hover:text-[#C55A11] font-medium transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
             <Link 
               href="/enquiry"
-              className="block text-center px-6 py-2 rounded-lg bg-[#EF7B2E] text-white font-semibold hover:bg-[#d96b1f] transition-all"
+              className="block text-center px-6 py-2 rounded-lg bg-[#C55A11] text-white font-semibold hover:bg-[#a04a0e] transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               Enrol Now

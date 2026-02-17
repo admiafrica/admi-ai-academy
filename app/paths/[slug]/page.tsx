@@ -56,7 +56,7 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
       <Header />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#EF7B2E] to-[#d96b1f] section-padding">
+        <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#C55A11] to-[#a04a0e] section-padding">
           <div className="section-container">
             <Link 
               href="/paths"

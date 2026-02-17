@@ -118,7 +118,7 @@ export default function EnquiryForm() {
             value={formData.firstName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
             placeholder="e.g., John"
           />
         </div>
@@ -135,7 +135,7 @@ export default function EnquiryForm() {
             value={formData.lastName}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors"
+            className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
             placeholder="e.g., Doe"
           />
         </div>
@@ -153,7 +153,7 @@ export default function EnquiryForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
           placeholder="e.g., john.doe@example.com"
         />
       </div>
@@ -170,7 +170,7 @@ export default function EnquiryForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
           placeholder="e.g., +254 712 345 678"
         />
       </div>
@@ -186,7 +186,7 @@ export default function EnquiryForm() {
           value={formData.programme}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors"
         >
           <option value="" className="bg-[#1a1a2e]">Select a programme...</option>
           <option value="ai-for-creatives" className="bg-[#1a1a2e]">AI for Creative Professionals</option>
@@ -207,7 +207,7 @@ export default function EnquiryForm() {
           value={formData.message}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#EF7B2E] focus:ring-2 focus:ring-[#EF7B2E]/20 transition-colors resize-none"
+          className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-[#C55A11] focus:ring-2 focus:ring-[#C55A11]/20 transition-colors resize-none"
           placeholder="Tell us about your goals and any questions you have..."
         />
       </div>
@@ -216,7 +216,7 @@ export default function EnquiryForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-[#EF7B2E] to-[#D9DC5B] text-white font-semibold hover:shadow-lg hover:shadow-[#EF7B2E]/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full px-8 py-4 rounded-lg bg-gradient-to-r from-[#C55A11] to-[#D9DC5B] text-white font-semibold hover:shadow-lg hover:shadow-[#C55A11]/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? "Submitting..." : "Submit Enquiry"}
       </button>
