@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -18,61 +19,75 @@ export default function Home() {
       />
       <Header />
       <main>
-        {/* Hero Section - Wide Layout with Gradient Background */}
-        <section className="relative w-full overflow-hidden bg-gradient-to-br from-ai-primary to-ai-teal section-padding">
-          <div className="section-container relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
-              <div>
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-semibold mb-6">
-                  🚀 Next Cohort Starts May 2026
-                </span>
-                
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                  Build with AI.
-                  <br />
-                  Create the Future.
-                </h1>
-                
-                <p className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl">
-                  Master AI tools and technologies at Africa's leading creative media institute. 
-                  Transform your career with practical, industry-focused AI training.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link 
-                    href="/paths"
-                    className="btn btn-white"
-                  >
-                    Explore Learning Paths
-                  </Link>
-                  <Link 
-                    href="/enquiry"
-                    className="btn btn-white-outline"
-                  >
-                    Talk to an Advisor
-                  </Link>
-                </div>
-              </div>
+        {/* Hero Section - Full Cover Image with Overlay */}
+        <section className="relative w-full overflow-hidden section-padding min-h-[600px] lg:min-h-[700px]">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/hero-image.png"
+              alt="Students working with AI technology"
+              fill
+              className="object-cover"
+              priority
+            />
+            {/* Left-side Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 via-25% to-transparent to-50%"></div>
+          </div>
 
-              {/* Right Column - Stats */}
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-md">
-                  <div className="text-4xl font-bold text-ai-primary mb-2">500+</div>
-                  <div className="text-sm text-gray-600">Students Trained</div>
-                </div>
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-md">
-                  <div className="text-4xl font-bold text-ai-teal mb-2">95%</div>
-                  <div className="text-sm text-gray-600">Completion Rate</div>
-                </div>
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-md">
-                  <div className="text-4xl font-bold text-ai-red mb-2">20+</div>
-                  <div className="text-sm text-gray-600">AI Tools Covered</div>
-                </div>
-                <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center shadow-md">
-                  <div className="text-4xl font-bold text-ai-primary mb-2">50+</div>
-                  <div className="text-sm text-gray-600">Industry Partners</div>
-                </div>
+          <div className="section-container relative z-10">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-sm font-semibold mb-6">
+                🚀 Next Cohort Starts May 2026
+              </span>
+              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+                Build with AI.
+                <br />
+                Create the Future.
+              </h1>
+              
+              <p className="text-lg md:text-xl text-white/95 mb-8">
+                Master AI tools and technologies at Africa's leading creative media institute. 
+                Transform your career with practical, industry-focused AI training.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link 
+                  href="/paths"
+                  className="btn btn-primary"
+                >
+                  Explore Learning Paths
+                </Link>
+                <Link 
+                  href="/enquiry"
+                  className="btn btn-white-outline"
+                >
+                  Talk to an Advisor
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="w-full bg-white section-padding py-16">
+          <div className="section-container">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-5xl font-bold text-[#C55A11] mb-2">500+</div>
+                <div className="text-sm text-gray-600 font-medium">Students Trained</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-[#2D5F5D] mb-2">95%</div>
+                <div className="text-sm text-gray-600 font-medium">Completion Rate</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-[#8B1A1F] mb-2">20+</div>
+                <div className="text-sm text-gray-600 font-medium">AI Tools Covered</div>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-[#C55A11] mb-2">50+</div>
+                <div className="text-sm text-gray-600 font-medium">Industry Partners</div>
               </div>
             </div>
           </div>
