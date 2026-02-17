@@ -119,10 +119,12 @@ export default function PathsPage() {
                           View Full Details
                         </Link>
                         <Link 
-                          href="/enquiry"
+                          href="https://lms.admi.africa/"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="btn btn-secondary btn-small"
                         >
-                          Enrol Now
+                          View Courses →
                         </Link>
                       </div>
                     </div>

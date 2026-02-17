@@ -97,10 +97,12 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
 
             <div className="flex gap-4">
               <Link 
-                href="/enquiry"
+                href="https://lms.admi.africa/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-lg bg-white text-ai-primary font-semibold hover:bg-white/95 shadow-md transition-all"
               >
-                Enrol Now
+                Browse Courses →
               </Link>
               <Link 
                 href="/enquiry"
@@ -230,12 +232,22 @@ export default function PathDetailPage({ params }: { params: { slug: string } })
             <p className="text-xl text-white/95 mb-8">
               Next cohort starts {path.nextIntake}. Limited spaces available.
             </p>
-            <Link 
-              href="/enquiry"
-              className="btn btn-white"
-            >
-              Enrol Now →
-            </Link>
+            <div className="flex gap-4 justify-center">
+              <Link 
+                href="https://lms.admi.africa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-white"
+              >
+                Browse Courses →
+              </Link>
+              <Link 
+                href="/enquiry"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-transparent border-2 border-white text-white font-bold text-base hover:bg-white/10 transition-all duration-200"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </section>
       </main>

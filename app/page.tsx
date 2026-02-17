@@ -56,10 +56,12 @@ export default function Home() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
-                  href="/paths"
+                  href="https://lms.admi.africa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary"
                 >
-                  Explore Learning Paths
+                  View All Courses
                 </Link>
                 <Link 
                   href="/enquiry"
@@ -165,7 +167,7 @@ export default function Home() {
                 Choose Your <span className="text-ai-primary">Learning Path</span>
               </h2>
               <p className="section-subheading">
-                Specialized programmes designed for your role and career goals
+                Specialized programmes designed for your role and career goals. <Link href="https://lms.admi.africa/" target="_blank" rel="noopener noreferrer" className="text-ai-primary hover:underline font-semibold">Browse all courses →</Link>
               </p>
             </div>
 
@@ -736,12 +738,22 @@ export default function Home() {
               <p className="text-xl text-white/95 mb-8 leading-relaxed">
                 Join the next cohort starting May 2026. Limited spaces available.
               </p>
-              <Link 
-                href="/enquiry"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-ai-red font-bold text-base hover:bg-white/95 transition-all duration-200 shadow-lg"
-              >
-                Enrol Now →
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  href="https://lms.admi.africa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-ai-red font-bold text-base hover:bg-white/95 transition-all duration-200 shadow-lg"
+                >
+                  Browse Courses →
+                </Link>
+                <Link 
+                  href="/enquiry"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-transparent border-2 border-white text-white font-bold text-base hover:bg-white/10 transition-all duration-200"
+                >
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </section>
