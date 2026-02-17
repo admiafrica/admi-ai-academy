@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "ADMI AI Academy | Build with AI. Create the Future.",
   description: "Master AI tools and technologies at Africa's leading creative media institute. Learn practical AI skills for creative professionals, marketers, and business analysts.",
   keywords: ["AI training", "AI courses", "machine learning", "AI Academy", "ADMI", "Africa", "creative AI", "AI for marketing"],
+  icons: {
+    icon: "/Logo admi 2.png",
+    shortcut: "/Logo admi 2.png",
+    apple: "/Logo admi 2.png",
+  },
   openGraph: {
     title: "ADMI AI Academy | Build with AI. Create the Future.",
     description: "Master AI tools and technologies at Africa's leading creative media institute.",
